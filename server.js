@@ -6,10 +6,10 @@ app.use(cors());
 app.use(express.json());
 
 // === Put YOUR details here or via Render env vars ===
-const FULL_NAME = (process.env.FULL_NAME || "john doe").trim().toLowerCase(); // full name in lowercase
-const DOB_DDMMYYYY = process.env.DOB_DDMMYYYY || "17091999"; // ddmmyyyy
-const EMAIL = process.env.EMAIL || "john@xyz.com";
-const ROLL_NUMBER = process.env.ROLL_NUMBER || "ABCD123";
+const FULL_NAME = (process.env.FULL_NAME || "somesh rathore").trim().toLowerCase(); // full name in lowercase
+const DOB_DDMMYYYY = process.env.DOB_DDMMYYYY || "27092004"; // ddmmyyyy
+const EMAIL = process.env.EMAIL || "someshrathore27@gmail.com";
+const ROLL_NUMBER = process.env.ROLL_NUMBER || "22BCE11193";
 
 // Helpers
 const userId = () =>
