@@ -101,6 +101,13 @@ app.post("/bfhl", (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.status(200).json({
+    status: "API is running",
+    message: "Use POST /bfhl to access the main endpoint"
+  });
+});
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);
